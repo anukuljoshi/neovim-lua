@@ -4,6 +4,9 @@ Map("", "<C-u>", "<C-u>zz")
 Map({"n", "v"}, "n", "nzzzv")
 Map({"n", "v"}, "N", "Nzzzv")
 
+-- append next line to current line without moving the cursor
+Map("n", "J", "mzJ`z")
+
 -- gg moves cursor to start of first line
 Map("", "gg", "gg0")
 -- G moves cursor to end of last line
