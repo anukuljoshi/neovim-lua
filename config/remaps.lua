@@ -30,6 +30,13 @@ Map({"n", "v"}, "<leader>D", "\"_D")
 -- delete to void register when pasting over a selection
 Map("x", "<leader>p", [["_dP]])
 
+-- map register n to <leader>n
+Map("", "<leader>1", [["1]])
+Map("", "<leader>2", [["2]])
+Map("", "<leader>3", [["3]])
+Map("", "<leader>4", [["4]])
+Map("", "<leader>5", [["5]])
+
 -- move line up down in visual mode
 Map("v", "J", ":m '>+1<CR>gv=gv")
 Map("v", "K", ":m '<-1<CR>gv=gv")
