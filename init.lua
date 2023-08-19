@@ -8,16 +8,13 @@ vim.g.mapleader = " "
 THROWAWAY_REGISTER = 'o'
 THROWAWAY_MARK = 'I'
 
-require('config.options')
-require('helpers.functions')
-require('plugins.plugins')
-require('plugins.mappings')
-require('config.remaps')
-require('helpers.features')
+require('config')
+require('helpers')
+require('packer')
+require('plugins')
 
 if vim.g.vscode then
-	require('vscode.functions')
-	require('vscode.mappings')
+	require('vscode')
 end
 
-print("nvim loaded")
+print("hello aj")

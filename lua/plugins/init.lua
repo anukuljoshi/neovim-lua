@@ -16,3 +16,5 @@ require("packer").startup(function(use)
         end,
     })
 end)
+
+require("plugins.mappings.easymotion")
