@@ -13,4 +13,4 @@
     4. Run ```:PackerSync``` to install plugins
 
 ### Optional
-To use shortcuts like <leader>y and <leader>p to copy/paste to/from clipboard, install xclip (or any other clipboard tool ```:help clipboard``` for more information)
+To use shortcuts like ```<leader>y``` and ```<leader>p``` to copy/paste to/from clipboard, install xclip (or any other clipboard tool ```:help clipboard``` for more information)

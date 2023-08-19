@@ -4,15 +4,11 @@ Map("", "<C-u>", "<C-u>zz")
 Map({"n", "v"}, "n", "nzzzv")
 Map({"n", "v"}, "N", "Nzzzv")
 
-Map("o", "{", "v{")
-Map("o", "}", "v}")
-Map("o", "+", "v+")
-Map("o", "-", "v-")
+-- gg moves cursor to start of first line
+Map("", "gg", "gg0")
+-- G moves cursor to end of last line
+Map("", "G", "G$")
 
--- add new line above cursor
-Map("n", "<c-k>", "o<esc>")
--- add new line below cursor
-Map("n", "<c-j>", "o<esc>")
 -- copy from cursor to end of line
 Map("n", "Y", "y$")
 
@@ -21,7 +17,7 @@ Map("n", "Y", "y$")
 -- copy to system clipboard register
 Map({"n", "v"}, "<leader>y", [["+y]])
 Map({"n", "v"}, "<leader>Y", [["+Y]])
--- paster from system clipboard
+-- paste from system clipboard
 Map({"n", "v"}, "<leader>p", [["+p]])
 Map({"n", "v"}, "<leader>P", [["+P]])
 
