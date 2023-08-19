@@ -4,9 +4,6 @@ Map("", "<C-u>", "<C-u>zz")
 Map({"n", "v"}, "n", "nzzzv")
 Map({"n", "v"}, "N", "Nzzzv")
 
-Map("", "<leader>/", "/\\v")
-Map("", "<leader>?", "?\\v")
-
 Map("o", "{", "v{")
 Map("o", "}", "v}")
 Map("o", "+", "v+")
@@ -18,9 +15,16 @@ Map("n", "<c-k>", "o<esc>")
 Map("n", "<c-j>", "o<esc>")
 -- copy from cursor to end of line
 Map("n", "Y", "y$")
+
+-- requires clipboard set up for neovim see :help clipboard
+-- install xclip | sudo apt install xclip
 -- copy to system clipboard register
 Map({"n", "v"}, "<leader>y", [["+y]])
 Map({"n", "v"}, "<leader>Y", [["+Y]])
+-- paster from system clipboard
+Map({"n", "v"}, "<leader>p", [["+p]])
+Map({"n", "v"}, "<leader>P", [["+P]])
+
 -- delete to void register
 Map({"n", "v"}, "<leader>d", "\"_d")
 Map({"n", "v"}, "<leader>D", "\"_D")
