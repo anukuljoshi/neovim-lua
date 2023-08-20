@@ -114,8 +114,6 @@ function Accept_merge_all_incoming() VSCodeNotify("merge-conflict.accept.all-inc
 
 function Accept_merge_selection() VSCodeNotify("merge-conflict.accept.selection") end
 
-function Codesnap() VSCodeNotify("codesnap.start", true) end
-
 function Toggle_breakpoint() VSCodeNotify("editor.debug.action.toggleBreakpoint") end
 
 function Copy_path() VSCodeNotify("copyFilePath") end

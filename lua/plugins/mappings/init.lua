@@ -1,1 +1,1 @@
-require("plugins.mappings.easymotion")
+require("plugins.mappings.hop")

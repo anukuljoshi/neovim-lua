@@ -9,8 +9,9 @@
 2. Configuration
     1. Create nvim config folder (~/.config/nvim)
     2. Clone this repo
-    3. Open neovim
-    4. Run ```:PackerSync``` to install plugins
+    3. Install [Packer](https://github.com/wbthomason/packer.nvim#quickstart)
+    4. Open neovim
+    5. Run ```:PackerSync``` to install plugins
 
 ### Optional
 To use shortcuts like ```<leader>y``` and ```<leader>p``` to copy/paste to/from clipboard, install xclip (or any other clipboard tool ```:help clipboard``` for more information)

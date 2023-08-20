@@ -1,3 +1,6 @@
+-- opens netrw (file explorer) / opens search files in vscode
+Map("n", "<leader><leader>f", vim.cmd.Ex)
+
 -- center cusror on screen when moving
 Map("", "<C-d>", "<C-d>zz")
 Map("", "<C-u>", "<C-u>zz")

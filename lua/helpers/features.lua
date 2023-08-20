@@ -38,16 +38,16 @@ Map("n", "<Esc>", remove_highlighting__escape)
 -- Map("", "/", "<cmd>lua Literal_search('/')<cr>")
 -- Map("", "?", "<cmd>lua Literal_search('?')<cr>")
 
-function Search_for_register(search_operator)
-    local char = GetChar("Input register key to search for:")
-    if not char then return end
-    local register = Validate_register(char)
-    local escaped_register = EscapeForLiteralSearch(vim.fn.getreg(register))
-    FeedKeys(search_operator .. '\\V' .. escaped_register)
-    FeedKeysInt('<cr>')
-end
-Map("", "<leader>f", "<cmd>lua Search_for_register('/')<cr>")
-Map("", "<leader>F", "<cmd>lua Search_for_register('?')<cr>")
+-- function Search_for_register(search_operator)
+--     local char = GetChar("Input register key to search for:")
+--     if not char then return end
+--     local register = Validate_register(char)
+--     local escaped_register = EscapeForLiteralSearch(vim.fn.getreg(register))
+--     FeedKeys(search_operator .. '\\V' .. escaped_register)
+--     FeedKeysInt('<cr>')
+-- end
+-- Map("", "<leader>f", "<cmd>lua Search_for_register('/')<cr>")
+-- Map("", "<leader>F", "<cmd>lua Search_for_register('?')<cr>")
 
 -- -- function Search_for_char(search_operator)
 -- --     local char = GetChar("Input char key to search for:")

@@ -17,4 +17,5 @@ if vim.g.vscode then
 	require('vscode')
 end
 
+-- confirmation message after config loaded successfully
 print("hello aj")
