@@ -73,6 +73,8 @@ function Indent_with_tabs() VSCodeNotify("editor.action.indentUsingTabs") end
 
 function CloseEditor() VSCodeNotify("workbench.action.closeActiveEditor") end
 
+function CloseOtherEditors() VSCodeNotify("workbench.action.closeOtherEditors") end
+
 function UndoCloseEditor() VSCodeNotify("workbench.action.reopenClosedEditor") end
 
 function Git_stage_file()

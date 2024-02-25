@@ -1,5 +1,5 @@
 -- opens netrw (file explorer) / opens search files in vscode
-Map("n", "<leader><leader>f", vim.cmd.Ex)
+Map("n", "<leader>ff", vim.cmd.Ex)
 
 -- center cusror on screen when moving
 Map("", "<C-d>", "<C-d>zz")
@@ -30,6 +30,8 @@ Map({"n", "v"}, "<leader>P", [["+P]])
 -- delete to void register
 Map({"n", "v"}, "<leader>d", "\"_d")
 Map({"n", "v"}, "<leader>D", "\"_D")
+Map({"n", "v"}, "<leader>c", "\"_c")
+Map({"n", "v"}, "<leader>C", "\"_D")
 -- delete to void register when pasting over a selection
 Map("x", "<leader>p", [["_dP]])
 
@@ -39,10 +41,6 @@ Map("", "<leader>2", [["2]])
 Map("", "<leader>3", [["3]])
 Map("", "<leader>4", [["4]])
 Map("", "<leader>5", [["5]])
-
--- move line up down in visual mode
-Map("v", "J", ":m '>+1<CR>gv=gv")
-Map("v", "K", ":m '<-1<CR>gv=gv")
 
 -- remove highlighted text
 Map("", "<leader>n", ":nohl<CR>")

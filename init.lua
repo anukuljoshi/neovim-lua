@@ -10,8 +10,8 @@ THROWAWAY_MARK = 'I'
 
 require('config')
 require('helpers')
-require('packer')
-require('plugins')
+require('cmd')
+require('plug')
 
 if vim.g.vscode then
 	require('vscode')

@@ -1,35 +1,30 @@
-function IsVSCodeInstance()
-    return vim.g.vscode ~= nil
-end
-
-function IsNeoVimInstance()
-    return vim.g.vscode == nil
-end
-
-require("packer").startup(function(use)
-    -- maintains other plugins
-    use "wbthomason/packer.nvim"
-
-    -- todo (optional): add telescope
-
-    -- add/update/delete surround characters
-    use {
+return {
+    {
+        "smoka7/hop.nvim",
+        version = "*",
+        opts = {},
+        config = function()
+            local hop = require("hop")
+            hop.setup({})
+            Map(
+                "", "s",
+                function()
+                    hop.hint_char1()
+                end,
+                {}
+            )
+            Map(
+                "", "<leader>gg",
+                function()
+                    hop.hint_vertical()
+                end,
+                {}
+            )
+        end
+    },
+    {
         "kylechui/nvim-surround",
-        tag = "*",
-        config = function()
-            require("nvim-surround").setup()
-        end
+        version = "*",
+        opts = {},
     }
-
-    -- quick easy jump motions
-    use {
-        'phaazon/hop.nvim',
-        branch = 'v2', -- optional but strongly recommended
-        config = function()
-            -- you can configure Hop the way you like here; see :h hop-config
-            require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
-        end
-    }
-end)
-
-require("plugins.mappings")
+}
